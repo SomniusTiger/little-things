@@ -1650,6 +1650,9 @@ p {
 code {
   color: #3b3b3b;
 }
+pre {
+  font-size: 14px !important;
+}
 ::selection {
   background-color: #d4595d;
 }
