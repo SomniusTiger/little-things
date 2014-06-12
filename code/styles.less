@@ -1,0 +1,219 @@
+//////////////////////////
+// Little Things Styles //
+//////////////////////////
+
+//////////
+// BASE //
+//////////
+
+// IMPORTS //
+
+// Fonts //
+
+// Font import mixin.
+.font-import(@font-name, @font-url, @font-weight: normal, @font-style: normal) {
+	@font-face {
+		font-family: @font-name;
+		src: url('@{font-url}.eot');
+		src: url('@{font-url}.eot?#iefix') format('embedded-opentype'),
+			url('@{font-url}.woff') format('woff'),
+			url('@{font-url}.ttf') format('truetype'),
+			url('@{font-url}.svg#@{font-name}') format('svg');
+		font-weight: @font-weight;
+		font-style: @font-style;
+	}
+}
+
+.font-import("Klinic Slab", "../fonts/klinicslabbold", bold, normal);
+
+.font-import("Klinic Slab", "../fonts/klinicslabbook", normal, normal);
+
+.font-import("Klinic Slab", "../fonts/klinicslablightit", lighter, italic);
+
+// Variables // 
+
+// Colors
+
+@red:			hsla(358, 59%, 39%, 1);
+@white:		hsla(0, 0%, 97%, 1);
+@black:		hsla(0, 0%, 3%, 1);
+
+@light-red: lighten(@red, 20%);
+
+// Fonts
+
+@klinic: "Klinic Slab", Arial, sans-serif;
+
+.klinic-bold {
+	font-family: @klinic;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.klinic-book {
+	font-family: @klinic;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.klinic-light-italic {
+	font-family: @klinic;
+	font-weight: lighter;
+	font-style: italic;
+}
+
+// Font Sizes
+@bigheader: 60px;
+@medheader: 48px;
+@smlheader: 20px;
+
+@paragraph: 14px;
+
+// Text Mixins
+
+.header(@font-size) {
+
+	font-size: @font-size;
+	line-height: 1.3 * @font-size;
+}
+
+// HTML //
+
+body {
+	.klinic-book;
+	background-color: @white;
+	color: @black;
+	text-align: left;
+	border-top: solid 2px @red;
+}
+
+h1, h2, h3, h4 {
+	.klinic-bold;
+}
+
+h1 {
+	.header(@bigheader);
+}
+
+h2 {
+	.header(@medheader);
+}
+
+h3 {
+	.header(@smlheader);
+}
+
+ul, ol {
+	.header(@medheader);
+}
+
+li {
+	margin: 0 0 20px 0;
+}
+
+a {
+	color: @red;
+
+	&:hover {
+		color: @light-red;
+	}
+}
+
+p {
+	font-size: @paragraph;
+}
+
+::selection {
+	background-color: @light-red;
+}
+
+////////////
+// LAYOUT //
+////////////
+
+////////////
+// MODULE //
+////////////
+
+// Text Modifiers
+
+.red-text {
+	color: @red;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.normal-text {
+	font-style: normal;
+	font-weight: normal;
+}
+
+.small-list {
+	.header(@smlheader);
+}
+
+// Icons
+
+.icon {
+	// Reset styles
+	margin: 0;
+	padding: 0;
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+.biggest-icon {
+	font-size: @bigheader * 3;
+}
+
+.bigger-icon {
+	font-size: @bigheader * 2;
+}
+
+.med-icon {
+	font-size: @bigheader;
+}
+
+.smaller-icon {
+	font-size: @bigheader / 2;
+}
+
+.smallest-icon {
+	font-size: @bigheader / 3;
+}
+
+// Custom Reveal.JS Stuff
+
+.progress {
+
+	// Bootstrap Override - bootstrap has the same class!!
+	margin: 0;
+	padding: 0;
+
+	span {
+		background-color: @red;
+	}
+}
+
+.navigate-left{
+	border-right-color: @red !important;
+}
+
+.navigate-right{
+	border-left-color: @red !important;
+}
+
+.navigate-up{
+	border-bottom-color: @red !important;
+}
+
+.navigate-down{
+	border-top-color: @red !important;
+}

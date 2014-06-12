@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Klinic Slab";
+  src: url('../fonts/klinicslabbold.eot');
+  src: url('../fonts/klinicslabbold.eot?#iefix') format('embedded-opentype'), url('../fonts/klinicslabbold.woff') format('woff'), url('../fonts/klinicslabbold.ttf') format('truetype'), url('../fonts/klinicslabbold.svg#Klinic Slab') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Klinic Slab";
+  src: url('../fonts/klinicslabbook.eot');
+  src: url('../fonts/klinicslabbook.eot?#iefix') format('embedded-opentype'), url('../fonts/klinicslabbook.woff') format('woff'), url('../fonts/klinicslabbook.ttf') format('truetype'), url('../fonts/klinicslabbook.svg#Klinic Slab') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Klinic Slab";
+  src: url('../fonts/klinicslablightit.eot');
+  src: url('../fonts/klinicslablightit.eot?#iefix') format('embedded-opentype'), url('../fonts/klinicslablightit.woff') format('woff'), url('../fonts/klinicslablightit.ttf') format('truetype'), url('../fonts/klinicslablightit.svg#Klinic Slab') format('svg');
+  font-weight: lighter;
+  font-style: italic;
+}
+.klinic-bold {
+  font-family: "Klinic Slab", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.klinic-book {
+  font-family: "Klinic Slab", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.klinic-light-italic {
+  font-family: "Klinic Slab", Arial, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+}
+body {
+  font-family: "Klinic Slab", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #f7f7f7;
+  color: #080808;
+  text-align: left;
+  border-top: solid 2px #9e292d;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Klinic Slab", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+h1 {
+  font-size: 60px;
+  line-height: 78px;
+}
+h2 {
+  font-size: 48px;
+  line-height: 62.4px;
+}
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+}
+ul,
+ol {
+  font-size: 48px;
+  line-height: 62.4px;
+}
+li {
+  margin: 0 0 20px 0;
+}
+a {
+  color: #9e292d;
+}
+a:hover {
+  color: #d4595d;
+}
+p {
+  font-size: 14px;
+}
+::selection {
+  background-color: #d4595d;
+}
+.red-text {
+  color: #9e292d;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.normal-text {
+  font-style: normal;
+  font-weight: normal;
+}
+.small-list {
+  font-size: 20px;
+  line-height: 26px;
+}
+.icon {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.biggest-icon {
+  font-size: 180px;
+}
+.bigger-icon {
+  font-size: 120px;
+}
+.med-icon {
+  font-size: 60px;
+}
+.smaller-icon {
+  font-size: 30px;
+}
+.smallest-icon {
+  font-size: 20px;
+}
+.progress {
+  margin: 0;
+  padding: 0;
+}
+.progress span {
+  background-color: #9e292d;
+}
+.navigate-left {
+  border-right-color: #9e292d !important;
+}
+.navigate-right {
+  border-left-color: #9e292d !important;
+}
+.navigate-up {
+  border-bottom-color: #9e292d !important;
+}
+.navigate-down {
+  border-top-color: #9e292d !important;
+}
