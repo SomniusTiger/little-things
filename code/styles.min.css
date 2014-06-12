@@ -1647,6 +1647,9 @@ a:hover {
 p {
   font-size: 14px;
 }
+code {
+  color: #3b3b3b;
+}
 ::selection {
   background-color: #d4595d;
 }
